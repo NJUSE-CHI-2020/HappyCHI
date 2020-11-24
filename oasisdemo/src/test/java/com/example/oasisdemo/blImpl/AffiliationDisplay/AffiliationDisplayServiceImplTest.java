@@ -15,10 +15,10 @@ class AffiliationDisplayServiceImplTest {
     @Autowired
     private AffiliationDisplayServiceImpl affiliationDisplayService;
 
-    @Test
-    void getAffiliationPortrait() {
-        Assertions.assertEquals(true,affiliationDisplayService.getAffiliationPortrait(0).getSuccess());
-    }
+//    @Test
+//    void getAffiliationPortrait() {
+//        Assertions.assertEquals(true,affiliationDisplayService.getAffiliationPortrait(0).getSuccess());
+//    }
 
     @Test
     void showAllAffiliation() {

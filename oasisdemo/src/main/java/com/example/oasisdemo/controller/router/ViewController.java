@@ -11,23 +11,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ViewController {
 
     @RequestMapping(value = "/index")
-    public String getIndex(){ return "index";}
-
-    @RequestMapping(value = "/search")
-    public String getSearch(){ return "search";}
+    public String getIndex() {
+        return "index";
+    }
 
     @RequestMapping(value = "/browse")
-    public String getBrowse(){ return "browse";}
-
-    @RequestMapping(value = "/about")
-    public String getAbout(){ return "about";}
-
-    @RequestMapping(value = "/search/display")
-    public String getSearchDisplay(){ return "searchDisplay";}
+    public String getBrowse() {
+        return "browse";
+    }
 
     @RequestMapping(value = "/visual")
-    public String getVisual(){return "visual";}
+    public String getVisual() {
+        return "visual";
+    }
 
-    @RequestMapping(value = "/test")
-    public String getTest(){return "test";}
 }

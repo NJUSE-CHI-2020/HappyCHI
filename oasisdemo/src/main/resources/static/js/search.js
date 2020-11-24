@@ -42,12 +42,13 @@ function toPage(pageNum) {
 
 function clear(){
     page =0;
-    items = new Array();
-
+    items = [];
 }
 
 function complexSearch() {
     clear();
+    $("#daily-news").toggle();
+    $("#doc-recommend").toggle();
     var author = 'authorname=' + $("input.search-input[name = 'authorname']").val();
     var affiliation = '&affiliation=' + $("input.search-input[name = 'affiliation']").val();
     var year = '&year=' + $("input.search-input[name = 'year']").val();
@@ -127,11 +128,11 @@ function complexSearch() {
             // itemSize = index;
             items.push(item);
         });
-        updatepage();
+        updatePage();
     })
 }
 
-function updatepage() {
+function updatePage() {
     previousbutton.disabled = page<=0?true:false;
     nextbutton.disabled = page >= (pageNum-1)?true:false;
     $("body > .container ~ *").remove();

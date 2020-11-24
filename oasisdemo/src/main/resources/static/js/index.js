@@ -28,6 +28,11 @@ $(function () {
         updatePage();
     }
 
+    $("#advanced-search").click(function () {
+        $("#search-bar").toggle();
+        $("#advanced-search-container").toggle();
+    })
+
     searchBtn.click(function () {
         var option = $("select option:selected");
         var searchType = option.val();
