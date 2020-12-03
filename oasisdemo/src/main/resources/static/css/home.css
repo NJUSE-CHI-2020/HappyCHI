@@ -76,6 +76,18 @@ body {
     color: black;
 }
 
+.same {
+    display: inline-block;
+    margin: auto 12px auto 12px;
+}
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .caption h4 {
     height: 40px;
